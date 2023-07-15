@@ -1,6 +1,7 @@
 import axios from "axios";
+import config from "../../config";
 
-const apiBaseUrl = 'https://play-pause-api.vercel.app/api';
+const apiBaseUrl = config.BASE_URL;
 const moviesEndpoint = `${apiBaseUrl}/watch`;
 const popularMoviesEndpoint = `${apiBaseUrl}/watch/?popular=true`;
 const newMoviesEndpoint = `${apiBaseUrl}/watch?new=true`;
@@ -9,7 +10,7 @@ const topRatedMoviesEndpoint = `${apiBaseUrl}/watch?rating=true`;
 const movieDetailsEndpoint = (id: string) => `${apiBaseUrl}/watch/${id}`;
 const searchMoviesEndpoint = (name:string) => `${apiBaseUrl}/watch?search=${name}`
 
-export const imgApibaseurl = `https://play-pause-api.onrender.com/userProfile/`;
+export const imgApibaseurl = config.BASE_URL_IMG;
 export const fallbackMoviePoster = 'https://img.myloview.com/stickers/white-laptop-screen-with-hd-video-technology-icon-isolated-on-grey-background-abstract-circle-random-dots-vector-illustration-400-176057922.jpg';
 export const fallbackPersonImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmUiF-YGjavA63_Au8jQj7zxnFxS_Ay9xc6pxleMqCxH92SzeNSjBTwZ0l61E4B3KTS7o&usqp=CAU';
 
