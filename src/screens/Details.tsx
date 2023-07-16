@@ -80,6 +80,7 @@ const Details = ({route, navigation}: any) => {
     <>
       <ScrollView
         contentContainerStyle={{paddingBottom: 20}}
+        showsVerticalScrollIndicator={false}
         className="flex-1 bg-[#101011]">
         <View className="w-full ">
           <SafeAreaView
@@ -171,27 +172,5 @@ const Details = ({route, navigation}: any) => {
     </>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  videoContainer: {
-    position: 'relative',
-    width: '100%',
-    height: 200,
-  },
-  videoPlayer: {
-    flex: 1,
-  },
-  pauseButton: {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: [{translateX: -15}, {translateY: -15}],
-  },
-});
 
 export default Details;

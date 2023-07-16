@@ -71,7 +71,7 @@ const Search = ({navigation}: any) => {
       ) : results.length > 0 && searchMovie ? (
         <ScrollView
           showsVerticalScrollIndicator={false}
-          contentContainerStyle={{paddingHorizontal: 15}}
+          contentContainerStyle={{paddingHorizontal: 5}}
           className="space-y-3">
           <Text className="text-[#ef4444] font-semibold ml-1 mb-4">
             Results ({results.length})

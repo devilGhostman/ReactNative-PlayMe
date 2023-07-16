@@ -10,6 +10,7 @@ const MovieCatalog = ({data, navigation}: any) => {
         data={data}
         keyExtractor={(item, index: any) => index}
         numColumns={2}
+        showsVerticalScrollIndicator={false}
         renderItem={({item}) => (
           <Pressable onPress={() => navigation.push('Detail', item)}>
             <View className="space-y-2 mb-4 mx-2">

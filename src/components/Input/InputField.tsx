@@ -19,7 +19,7 @@ const InputField = ({
       render={({field: {onChange, onBlur, value}, fieldState: {error}}) => (
         <>
           <View
-            className="flex-row pb-2 mb-2 border-b-2 border-b-[#ccc] justify-start items-center"
+            className="flex-row pb-2 mb-1 border-b-2 border-b-[#ccc] justify-start items-center"
             style={[{borderBottomColor: error ? 'red' : '#ccc'}]}>
             {icon}
             <TextInput
@@ -29,7 +29,7 @@ const InputField = ({
               onBlur={onBlur}
               secureTextEntry={secureTextEntry}
               keyboardType={keyboardType}
-              className='text-white'
+              className="text-white"
             />
           </View>
           <Text className="text-red-500">{error?.message}</Text>

@@ -65,6 +65,7 @@ const MovieList = ({title, data, hideSeeAll}: any) => {
         data={data}
         keyExtractor={(data, index: any) => index}
         horizontal={true}
+        showsHorizontalScrollIndicator={false}
         renderItem={({item}) => (
           // console.log(item)
           <Pressable onPress={() => navigation.push('Detail', item)}>

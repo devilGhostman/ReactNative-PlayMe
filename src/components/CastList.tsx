@@ -17,6 +17,7 @@ const CastList = ({casts}: any) => {
         keyExtractor={(person: personDetail, index: any) => index}
         data={casts}
         horizontal={true}
+        showsHorizontalScrollIndicator={false}
         renderItem={person => (
           <View className="mr-4 items-center">
             <View className="overflow-hidden rounded-2xl h-20 w-20 items-center border border-neutral-500">
